@@ -1,4 +1,4 @@
-api-ruby-sdk
+ruby-sdk
 ============
 
 Ticket on Rails Api Ruby Client
