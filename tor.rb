@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'digest/md5'
 require 'json'
+require 'rest_client'
 
 module ToR
 
