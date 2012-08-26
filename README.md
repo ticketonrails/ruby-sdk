@@ -61,4 +61,4 @@ Response: json response with the associated ticket id.
 
 ## LICENSE
 
-This SDK is released under the [MIT license](https://github.com/TicketOnRails/ruby-sdk/blob/master/LICENSE)
+This SDK is released under the [MIT license](https://github.com/ticketonrails/ruby-sdk/blob/master/LICENSE)
