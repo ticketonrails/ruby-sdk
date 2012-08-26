@@ -14,7 +14,7 @@ ticket["body"] = 'lorem ipsum...'
 ticket["html"] = false
 ticket["date"] = Time.now.nsec
 ticket["labels"] = ['label 1', 'label 2']
-ticket["attachment"] = "attachment.txt"
+ticket["attachment"] = "./attachment.txt"
 
 ticket_result = api.new_ticket(ticket)
 puts ticket_result
