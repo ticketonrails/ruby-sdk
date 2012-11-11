@@ -24,7 +24,7 @@ module ToR
 
       case method
         when "GET"
-          http_response = RestClient.get request_url, parameters
+          http_response = RestClient.get request_url + '?' + parameters.map{|k,v| "#{URI.encode(k.to_s)}=#{URI.encode(v.to_s)}"}.join('&')
         when "POST"
           http_response = RestClient.post request_url, parameters
         else
@@ -60,6 +60,17 @@ module ToR
       end
       params["ticket"] = ticket.to_json
       return request("/tickets", "POST", params)
+    end
+
+    def get_tickets(page, limit)
+      params = {}
+      params["page"] = page
+      params["limit"] = limit
+      return request("/tickets", "GET", params)
+    end
+
+    def get_ticket(ticket_id)
+      return request("/tickets/" + ticket_id, "GET", {})
     end
 
   end

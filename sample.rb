@@ -18,3 +18,11 @@ ticket["attachment"] = "./attachment.txt"
 
 ticket_result = api.new_ticket(ticket)
 puts ticket_result
+
+tickets_list = api.get_tickets(1, 20)
+puts tickets_list
+
+if tickets_list.length > 0
+    ticket = api.get_ticket(tickets_list['tickets'][0]['id'])
+    puts ticket
+end
