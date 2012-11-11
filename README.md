@@ -98,7 +98,7 @@ Note that all the dates are in EPOCH format; "status" value is enumerated in the
 * Closed: 2
 
 ### Ticket details
-This allows to retrieve all the ticket details
+Retrieves a ticket details
 
 url: http://api.ticketonrails.com/v1/tickets/[ticket id]
 
