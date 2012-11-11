@@ -44,10 +44,10 @@ Parameters:
 				]
 	}
 
-email, subject and body are required. if date is not speficied the current EPOCH time will be used.
-html indicates if the message body is plain text or HTML.
+email, subject and body are required. if date is not specified the current EPOCH time will be used.
+HTML indicates if the message body is plain text or HTML.
 
-* attachment: 1 file can be specified in the request. Your POST  request's Content-Type 
+* attachment: 1 file can be specified in the request. Your POST request's Content-Type 
 should be set to multipart/form-data with the attachments parameter.
 
 Response: json response with the associated ticket id.
@@ -106,7 +106,7 @@ method: GET
 
 Parameters: None. The ticket id is specifies in the url.
 
-Response: json response with the seleccted ticket details.
+Response: json response with the selected ticket details.
 
 	{
 		"ticket":
